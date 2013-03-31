@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		2A71ABB2170479510075E8D0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A71ABB1170479510075E8D0 /* Cocoa.framework */; };
-		2A71ABBC170479510075E8D0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2A71ABBA170479510075E8D0 /* InfoPlist.strings */; };
 		2A71ABBE170479510075E8D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A71ABBD170479510075E8D0 /* main.m */; };
-		2A71ABC2170479510075E8D0 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2A71ABC0170479510075E8D0 /* Credits.rtf */; };
 		2A71ABC5170479510075E8D0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A71ABC4170479510075E8D0 /* AppDelegate.m */; };
-		2A71ABC8170479510075E8D0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A71ABC6170479510075E8D0 /* MainMenu.xib */; };
+		2A71ABD017047ACF0075E8D0 /* Unmounter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A71ABCF17047ACF0075E8D0 /* Unmounter.m */; };
+		2A71ABD31704889A0075E8D0 /* Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A71ABD21704889A0075E8D0 /* Menu.m */; };
+		2A71ABD517048CFF0075E8D0 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A71ABD417048CFF0075E8D0 /* icon.png */; };
+		2A71ABD717048E910075E8D0 /* SidebarInternalDisk.icns in Resources */ = {isa = PBXBuildFile; fileRef = 2A71ABD617048E910075E8D0 /* SidebarInternalDisk.icns */; };
+		2A8B58661705E0B00027DE39 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A8B58641705E0B00027DE39 /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,14 +23,20 @@
 		2A71ABB4170479510075E8D0 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		2A71ABB5170479510075E8D0 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		2A71ABB6170479510075E8D0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		2A71ABB9170479510075E8D0 /* unmountMe-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "unmountMe-Info.plist"; sourceTree = "<group>"; };
-		2A71ABBB170479510075E8D0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		2A71ABBD170479510075E8D0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2A71ABBF170479510075E8D0 /* unmountMe-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "unmountMe-Prefix.pch"; sourceTree = "<group>"; };
-		2A71ABC1170479510075E8D0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		2A71ABB9170479510075E8D0 /* unmountMe-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "unmountMe-Info.plist"; sourceTree = "<group>"; };
+		2A71ABBD170479510075E8D0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2A71ABBF170479510075E8D0 /* unmountMe-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "unmountMe-Prefix.pch"; sourceTree = "<group>"; };
 		2A71ABC3170479510075E8D0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2A71ABC4170479510075E8D0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2A71ABC7170479510075E8D0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		2A71ABCE17047ACF0075E8D0 /* Unmounter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Unmounter.h; sourceTree = "<group>"; };
+		2A71ABCF17047ACF0075E8D0 /* Unmounter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Unmounter.m; sourceTree = "<group>"; };
+		2A71ABD11704889A0075E8D0 /* Menu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Menu.h; sourceTree = "<group>"; };
+		2A71ABD21704889A0075E8D0 /* Menu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Menu.m; sourceTree = "<group>"; };
+		2A71ABD417048CFF0075E8D0 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		2A71ABD617048E910075E8D0 /* SidebarInternalDisk.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = SidebarInternalDisk.icns; sourceTree = "<group>"; };
+		2A8B58651705E0B00027DE39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		2A8B58671705E0C50027DE39 /* sv */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = sv; path = sv.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		2A8B586A1705E4080027DE39 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +92,11 @@
 			children = (
 				2A71ABC3170479510075E8D0 /* AppDelegate.h */,
 				2A71ABC4170479510075E8D0 /* AppDelegate.m */,
-				2A71ABC6170479510075E8D0 /* MainMenu.xib */,
+				2A71ABD11704889A0075E8D0 /* Menu.h */,
+				2A71ABD21704889A0075E8D0 /* Menu.m */,
+				2A71ABCE17047ACF0075E8D0 /* Unmounter.h */,
+				2A71ABCF17047ACF0075E8D0 /* Unmounter.m */,
+				2A8B58641705E0B00027DE39 /* MainMenu.xib */,
 				2A71ABB8170479510075E8D0 /* Supporting Files */,
 			);
 			path = unmountMe;
@@ -93,11 +105,11 @@
 		2A71ABB8170479510075E8D0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2A71ABD617048E910075E8D0 /* SidebarInternalDisk.icns */,
+				2A71ABD417048CFF0075E8D0 /* icon.png */,
 				2A71ABB9170479510075E8D0 /* unmountMe-Info.plist */,
-				2A71ABBA170479510075E8D0 /* InfoPlist.strings */,
 				2A71ABBD170479510075E8D0 /* main.m */,
 				2A71ABBF170479510075E8D0 /* unmountMe-Prefix.pch */,
-				2A71ABC0170479510075E8D0 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -137,6 +149,9 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				ru,
+				Base,
+				sv,
 			);
 			mainGroup = 2A71ABA5170479510075E8D0;
 			productRefGroup = 2A71ABAF170479510075E8D0 /* Products */;
@@ -153,9 +168,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A71ABBC170479510075E8D0 /* InfoPlist.strings in Resources */,
-				2A71ABC2170479510075E8D0 /* Credits.rtf in Resources */,
-				2A71ABC8170479510075E8D0 /* MainMenu.xib in Resources */,
+				2A71ABD517048CFF0075E8D0 /* icon.png in Resources */,
+				2A71ABD717048E910075E8D0 /* SidebarInternalDisk.icns in Resources */,
+				2A8B58661705E0B00027DE39 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,32 +183,20 @@
 			files = (
 				2A71ABBE170479510075E8D0 /* main.m in Sources */,
 				2A71ABC5170479510075E8D0 /* AppDelegate.m in Sources */,
+				2A71ABD017047ACF0075E8D0 /* Unmounter.m in Sources */,
+				2A71ABD31704889A0075E8D0 /* Menu.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2A71ABBA170479510075E8D0 /* InfoPlist.strings */ = {
+		2A8B58641705E0B00027DE39 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2A71ABBB170479510075E8D0 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		2A71ABC0170479510075E8D0 /* Credits.rtf */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2A71ABC1170479510075E8D0 /* en */,
-			);
-			name = Credits.rtf;
-			sourceTree = "<group>";
-		};
-		2A71ABC6170479510075E8D0 /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2A71ABC7170479510075E8D0 /* en */,
+				2A8B58651705E0B00027DE39 /* Base */,
+				2A8B58671705E0C50027DE39 /* sv */,
+				2A8B586A1705E4080027DE39 /* en */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "unmountMe/unmountMe-Prefix.pch";
 				INFOPLIST_FILE = "unmountMe/unmountMe-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -279,6 +283,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "unmountMe/unmountMe-Prefix.pch";
 				INFOPLIST_FILE = "unmountMe/unmountMe-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -303,6 +308,7 @@
 				2A71ABCD170479510075E8D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
