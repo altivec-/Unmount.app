@@ -14,6 +14,7 @@
 		2A71ABD31704889A0075E8D0 /* Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A71ABD21704889A0075E8D0 /* Menu.m */; };
 		2A71ABD517048CFF0075E8D0 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A71ABD417048CFF0075E8D0 /* icon.png */; };
 		2A71ABD717048E910075E8D0 /* SidebarInternalDisk.icns in Resources */ = {isa = PBXBuildFile; fileRef = 2A71ABD617048E910075E8D0 /* SidebarInternalDisk.icns */; };
+		2A772CEF17099DA900AC07A4 /* EjectMediaIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 2A772CEE17099DA900AC07A4 /* EjectMediaIcon.icns */; };
 		2A8B58661705E0B00027DE39 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A8B58641705E0B00027DE39 /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +35,7 @@
 		2A71ABD21704889A0075E8D0 /* Menu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Menu.m; sourceTree = "<group>"; };
 		2A71ABD417048CFF0075E8D0 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		2A71ABD617048E910075E8D0 /* SidebarInternalDisk.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = SidebarInternalDisk.icns; sourceTree = "<group>"; };
+		2A772CEE17099DA900AC07A4 /* EjectMediaIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = EjectMediaIcon.icns; sourceTree = "<group>"; };
 		2A8B58651705E0B00027DE39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		2A8B58671705E0C50027DE39 /* sv */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = sv; path = sv.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		2A8B586A1705E4080027DE39 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 		2A71ABA5170479510075E8D0 = {
 			isa = PBXGroup;
 			children = (
+				2A772CEE17099DA900AC07A4 /* EjectMediaIcon.icns */,
 				2A71ABB7170479510075E8D0 /* unmountMe */,
 				2A71ABB0170479510075E8D0 /* Frameworks */,
 				2A71ABAF170479510075E8D0 /* Products */,
@@ -171,6 +174,7 @@
 				2A71ABD517048CFF0075E8D0 /* icon.png in Resources */,
 				2A71ABD717048E910075E8D0 /* SidebarInternalDisk.icns in Resources */,
 				2A8B58661705E0B00027DE39 /* MainMenu.xib in Resources */,
+				2A772CEF17099DA900AC07A4 /* EjectMediaIcon.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

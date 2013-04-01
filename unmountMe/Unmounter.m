@@ -15,7 +15,7 @@
     NSArray *listOfMedia = [[NSWorkspace sharedWorkspace]mountedRemovableMedia];
     if(![listOfMedia count])
     {
-        NSLog(@"Nothing to unmount!");
+        //will return 65536 if no unmountable media present
         return 65536;
     }
     else
@@ -45,12 +45,12 @@
 }
 
 + (NSArray *)currentlyMountedDisks {
-    NSLog(@"%@", [[NSWorkspace sharedWorkspace]mountedRemovableMedia]);
+    //NSLog(@"%@", [[NSWorkspace sharedWorkspace]mountedRemovableMedia]);
     return [[NSWorkspace sharedWorkspace]mountedRemovableMedia];
 }
 
 + (void)unmountDeviceAtPath:(NSString*)path {
-    NSLog(@"will unmount %@", path);
+    //NSLog(@"will unmount %@", path);
     [[NSWorkspace sharedWorkspace]unmountAndEjectDeviceAtPath:path];
 }
 

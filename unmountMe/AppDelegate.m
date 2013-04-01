@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#define DISKLIST 3
 
 @implementation AppDelegate
 
@@ -22,14 +23,14 @@
     }
     
     
-    //list devices at launch
+    //@@list devices at launch
     for(NSString *path in [Unmounter currentlyMountedDisks]) {
         NSMenuItem *item = [[NSMenuItem alloc]initWithTitle:path action:@selector(menuUnmountCallback:) keyEquivalent:@""];
         [item setEnabled:YES];
-        [_tray insertItem:item atIndex:3];
+        [_tray insertItem:item atIndex:DISKLIST];
     }
     [_myMenu setTrayText:[NSString stringWithFormat:@"%u", [Unmounter currentlyMountedDisksNumber]]];
-    //end
+    //@@end
 }
 
 - (IBAction)unmountDisks:(id)sender {
@@ -71,7 +72,6 @@
 }
 
 - (IBAction)listAllDevs:(id)sender {
-    NSLog(@"listAllDevs:");
     if ([[_tray itemArray]count] > 2)
     {
         int count = (int)[[_tray itemArray]count];
@@ -90,12 +90,14 @@
     }
 }
 
-- (IBAction)menuUnmountCallback:(id)sender { //invoked by menu item (@selector(menuUnmountCallback:))
+- (IBAction)menuUnmountCallback:(id)sender {
+    //invoked by menu item (@selector(menuUnmountCallback:))
     [Unmounter unmountDeviceAtPath:[sender title]];
     [_tray removeItem:sender];
     [_myMenu setTrayText:[NSString stringWithFormat:@"%i", [Unmounter currentlyMountedDisksNumber]]];
 
 }
+
 -(void)startTimer {
     _myTimer = [NSTimer scheduledTimerWithTimeInterval:3 target:self selector:@selector(timerFired:) userInfo:nil repeats:YES];
 }
@@ -108,7 +110,7 @@
 }
 
 - (IBAction)showAboutPanel:(id)sender {
-    NSDictionary *options = @{@"Version":@"1.0b", @"ApplicationName":@"Unmounter", @"Copyright":@"by Valera Antonov", @"ApplicationVersion":@"Unmounter™ 1.0 beta"};
+    NSDictionary *options = @{@"Version":@"1.0c", @"ApplicationName":@"Unmounter", @"Copyright":@"by Valera Antonov", @"ApplicationVersion":@"Unmounter™ 1.0.1"};
     [[NSApplication sharedApplication]orderFrontStandardAboutPanelWithOptions:options];
 } //custom about panel
 
@@ -123,6 +125,5 @@
     [[NSUserNotificationCenter defaultUserNotificationCenter] deliverNotification:notification];
     }
 }
-
 
 @end
